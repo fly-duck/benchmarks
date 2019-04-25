@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/booney/Myworkspace/sample_ws/devel/include",
+                "/home/booney/demo_ws/devel/include",
+                "/home/booney/carto_Ws/install_isolated/include",
+                "/opt/ros/kinetic/include",
+                "/home/booney/Myworkspace/sample_ws/src/map_demo/include",
+                "/home/booney/Myworkspace/sample_ws/src/move_base_flex-master/mbf_abstract_core/include",
+                "/home/booney/Myworkspace/sample_ws/src/move_base_flex-master/mbf_abstract_nav/include",
+                "/home/booney/Myworkspace/sample_ws/src/move_base_flex-master/mbf_costmap_core/include",
+                "/home/booney/Myworkspace/sample_ws/src/move_base_flex-master/mbf_costmap_nav/include",
+                "/home/booney/Myworkspace/sample_ws/src/move_base_flex-master/mbf_simple_nav/include",
+                "/home/booney/Myworkspace/sample_ws/src/move_base_flex-master/mbf_utility/include",
+                "/home/booney/Myworkspace/sample_ws/src/ros_gtest_example/src/ros_gtest/include",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

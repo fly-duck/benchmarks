@@ -8,7 +8,7 @@ from nav_msgs.msg import OccupancyGrid
 import tf
 from tf.msg import tfMessage
 from visualization_msgs.msg import Marker
-from leg_tracker.msg import Person, PersonArray
+from map_demo.msg import Person, PersonArray
 from munkres import Munkres # Third party library. For the minimum matching assignment problem. To install: https://pypi.python.org/pypi/munkres 
 import math
 import numpy as np
@@ -48,6 +48,7 @@ class ClearMot:
 
             # Open the bag file to be annotated
             self.readbag = rosbag.Bag(readbag_filename)
+            print(self.readbag)
             self.msg_gen = self.readbag.read_messages()
 
             # Open the bag file to write clear_mot animations to
@@ -114,7 +115,9 @@ class ClearMot:
 
 
     def close_bags(self, not_using_this_var=None):
+        print("GG")
         self.readbag.close()
+        print("WPGG")
         self.savebag.close()       
 
 
@@ -153,7 +156,6 @@ class ClearMot:
             while True:
                 try: 
                     topic, msg, t = next(self.msg_gen)
-
                     if topic == self.scan_topic:
                         next_scan_msg = (topic, msg, t)
                         next_scan_msg_time = t
@@ -484,13 +486,14 @@ if __name__ == '__main__':
     # Read-in the bags to be evaluated and saved. Multiple readbags and savebags can be used and their statistics will be aggregated
     filenames = []
     for i in xrange(1, 99):
+        print("hello")
         next_readbag_filename = rospy.get_param("readbag_filename_" + str(i), None)
         next_savebag_filename = rospy.get_param("savebag_filename_" + str(i), None)
         if next_readbag_filename is not None and next_savebag_filename is not None:
             filenames.append((next_readbag_filename, next_savebag_filename))
         else:
             break
-
+    print(filenames)
     ccm = ClearMot(filenames)
 
 

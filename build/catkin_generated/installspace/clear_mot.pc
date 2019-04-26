@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: clear_mot
+Description: Description of clear_mot
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

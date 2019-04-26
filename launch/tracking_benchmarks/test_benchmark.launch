@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<launch>
+  <!-- params -->
+  <param name="readbag_filename_1" value="/home/booney/Myworkspace/sample_ws/src/map_demo/rosbags/real_bags/test.bag" />  
+  <param name="savebag_filename_1" value="/home/booney/Myworkspace/sample_ws/src/map_demo/rosbags/real_bags/test_beachmark.bag" />  
+  <param name="scan_topic" value="/scan" />
+  
+  <!-- run calc_clear_mot -->
+  <node pkg="clear_mot" type="clear_mot.py" name="clear_mot" output="screen" required="true"/>
+</launch>

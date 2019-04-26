@@ -4,5 +4,6 @@
         "/home/booney/demo_ws/devel/lib/python2.7/dist-packages",
         "/home/booney/carto_Ws/install_isolated/lib/python2.7/dist-packages",
         "/opt/ros/kinetic/lib/python2.7/dist-packages"
-    ]
+    ],
+    "python.pythonPath": "/usr/bin/python"
 }

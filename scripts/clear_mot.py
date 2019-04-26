@@ -156,6 +156,7 @@ class ClearMot:
             while True:
                 try: 
                     topic, msg, t = next(self.msg_gen)
+                    # print(topic.)
                     if topic == self.scan_topic:
                         next_scan_msg = (topic, msg, t)
                         next_scan_msg_time = t

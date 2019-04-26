@@ -1,8 +1,0 @@
-prefix=/home/booney/Myworkspace/sample_ws/src/clear_mot/build/devel
-
-Name: clear_mot
-Description: Description of clear_mot
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/booney/Myworkspace/sample_ws/src/clear_mot/build/devel/lib 
-Requires: 
